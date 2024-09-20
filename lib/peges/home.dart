@@ -344,11 +344,15 @@ class _ChatRoomListTileState extends State<ChatRoomListTile> {
               SizedBox(
                 height: 10.0,
               ),
-              Text(
-                username,
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
+              Container(
+                width: width / 3,
+                child: Text(
+                  username,
+                  overflow: TextOverflow.ellipsis,
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 20,
+                  ),
                 ),
               ),
               Container(
